@@ -1,0 +1,72 @@
+[debug] [2021-02-20T09:13:59.384Z] ----------------------------------------------------------------------
+[debug] [2021-02-20T09:13:59.409Z] Command:       D:\Users\Cogent\node\node.exe C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-02-20T09:13:59.409Z] CLI Version:   9.4.0
+[debug] [2021-02-20T09:13:59.410Z] Platform:      win32
+[debug] [2021-02-20T09:13:59.410Z] Node Version:  v14.15.4
+[debug] [2021-02-20T09:13:59.488Z] Time:          Sat Feb 20 2021 14:43:59 GMT+0530 (India Standard Time)
+[debug] [2021-02-20T09:13:59.488Z] ----------------------------------------------------------------------
+[debug] [2021-02-20T09:13:59.488Z] 
+[debug] [2021-02-20T09:13:59.542Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-20T09:13:59.542Z] > authorizing via signed-in user
+[debug] [2021-02-20T09:13:59.543Z] [iam] checking project netflix-clone-6f192 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-20T09:13:59.546Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-6f192:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-20T09:14:02.037Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 20 Feb 2021 09:14:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1357","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-20T09:14:02.040Z] > refreshing access token with scopes: []
+[debug] [2021-02-20T09:14:02.041Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-20T09:14:23.183Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-02-20T09:14:44.362Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:26:12)
+    at refreshTokens (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:297:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.getAccessToken (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:144:23)
+    at async Client.addAuthHeader (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:135:21)
+    at async Client.request (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:34)
+    at async Object.getFirebaseProject (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.getDefaultHostingSite (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:66:9)
+    at async C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:17
+[error] 
+[error] Error: Failed to get Firebase project netflix-clone-6f192. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-02-20T09:15:28.405Z] ----------------------------------------------------------------------
+[debug] [2021-02-20T09:15:28.408Z] Command:       D:\Users\Cogent\node\node.exe C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-02-20T09:15:28.408Z] CLI Version:   9.4.0
+[debug] [2021-02-20T09:15:28.408Z] Platform:      win32
+[debug] [2021-02-20T09:15:28.408Z] Node Version:  v14.15.4
+[debug] [2021-02-20T09:15:28.409Z] Time:          Sat Feb 20 2021 14:45:28 GMT+0530 (India Standard Time)
+[debug] [2021-02-20T09:15:28.410Z] ----------------------------------------------------------------------
+[debug] [2021-02-20T09:15:28.410Z] 
+[debug] [2021-02-20T09:15:28.420Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-20T09:15:28.421Z] > authorizing via signed-in user
+[debug] [2021-02-20T09:15:28.421Z] [iam] checking project netflix-clone-6f192 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-20T09:15:28.424Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-6f192:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-20T09:15:30.290Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 20 Feb 2021 09:15:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1337","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-20T09:15:30.295Z] > refreshing access token with scopes: []
+[debug] [2021-02-20T09:15:30.296Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-20T09:15:51.347Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-02-20T09:15:52.074Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:26:12)
+    at refreshTokens (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:297:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.getAccessToken (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:144:23)
+    at async Client.addAuthHeader (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:135:21)
+    at async Client.request (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:34)
+    at async Object.getFirebaseProject (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.getDefaultHostingSite (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:66:9)
+    at async C:\Users\Cogent\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:17
+[error] 
+[error] Error: Failed to get Firebase project netflix-clone-6f192. Please make sure the project exists and your account has permission to access it.
